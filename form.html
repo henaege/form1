@@ -58,6 +58,9 @@
                 text-align: center;
                 width: 1.4em;
             }
+            .error {
+                color: red;
+            }
             
             
         </style>
@@ -65,6 +68,7 @@
     <body>
         <div class="container">
             <div class="row">
+                <form id="signup-form">
                 <div class="col-sm-7 col-sm-offset-2" id="wrapper">
                 <div class="col-sm-12" id="header-wrap">
                     <div id="form-header">
@@ -76,54 +80,62 @@
                         <h2 class="in-form"><span class="numbers"> 1 </span>Name and Address</h2>
                         <div class="col-sm-12 section">
                             <h4>Your full name:</h4>
-                            <div class="full-name-error"></div>
-                            <input type="text" name="name" placeholder=" Your Full Name">
+                            <div class="full-name-error error"></div>
+                            <input class="full-name" type="text" placeholder=" Your Full Name"/>
                             <h4>Address:</h4>
-                            <div class="address-error"></div>
-                            <input type="text" name="address" placeholder=" Your Address">
+                            <div class="address-error error"></div>
+                            <input class="address" type="text" placeholder=" Your Address"/>
                         </div>
                     </div>
                     <div id="contact">
                         <h2 class="in-form"><span class="numbers"> 2 </span>Contact Info</h2>
                         <div class="col-sm-12 section">
                             <h4>Email:</h4>
-                            <input type="text" name="email" placeholder=" Your email address">
+                            <div class="email-error error"></div>
+                            <input class="email" type="text" placeholder=" Your email address"/>
                             <h4>Phone:</h4>
-                            <input type="text" name="phone" placeholder=" Your phone number">
+                            <div class="phone-error error"></div>
+                            <input class="phone" type="text" placeholder=" Your phone number"/>
                         </div>
                     </div>
                     <div id="password">
                         <h2 class="in-form"><span class="numbers"> 3 </span>Password</h2>
                         <div class="col-sm-12 section">
                             <h4>Password:</h4>
-                            <input type="text" name="email" placeholder=" Password must be 6 characters">
+                            <div class="password-error error"></div>
+                            <input class="password" type="text" placeholder=" Password must be 6 characters"/>
                             <h4>Confirm Password:</h4>
-                            <input type="text" name="phone" placeholder=" Re-enter your password">
+                            <div class="password2-error error"></div>
+                            <input class="password2" type="text"placeholder=" Re-enter your password"/>
                         </div>
                     </div>
                     <div id="skills">
                         <h2 class="in-form"><span class="numbers"> 4 </span>Skills</h2>
                         <div class="col-sm-12 section">
                             <h4>My Tech Skills:</h4>
-                            <input type="text" name="email" placeholder=" Enter your skills">
+                            <div class="skills-error error"></div>
+                            <input class="skills" type="text" placeholder=" Enter your skills"/>
                             <h4>Years of Experience:</h4>
-                            <input type="text" name="phone" placeholder=" Years of XP">
+                            <div class="experience-error error"></div>
+                            <input class="experience" type="text" placeholder=" Years of XP"/>
                         </div>
                     </div>
                     <div id="submit">
                         <div class="col-sm-12 section">
                             <div class="checkbox">
                             <label>
-                                <input id="check" type="checkbox">I agree to the terms and policies</label>
+                                <div class="check-error error"></div>
+                                <input class="check" id="check" type="checkbox">I agree to the terms and policies</label>
                                 </div>
                             <div class="control-group">
-                                <button class="btn btn-primary" type="button">Get me a job!</button>
+                                <button class="btn btn-primary" type="submit">Get me a job!</button>
                             </div>
                             
                         </div>
                     </div>
                 </div>
                 </div>
+                </form>
             </div>
         </div>
     </body>
