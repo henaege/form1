@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="validate.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            #form-header {
+                background-color: lightslategray;
+                color: white;
+                padding: 15px;
+                width: 100%;
+                margin-top: 10px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            #wrapper {
+                margin: 5px;
+                background-color: lightgrey;
+                border: outset 5px;
+            }
+            .section {
+                background-color: #CCCCCC;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            
+            input {
+                width: 100%;
+                border-radius: 20px;
+            }
+            .step-num {
+                background-color: lightslategrey;
+                color: white;
+                border-radius: 50px;
+                display: inline;
+                padding: 5px;
+            }
+            .control-group {
+                padding: 15px;
+                width: 100%;
+            }
+            button {
+                width: 100%;
+                border-radius: 50px;
+
+            }
+            .numbers {
+                background-color: lightslategrey;
+                color: white;
+                border-radius: .7em;
+                display: inline-block;
+                line-height: 1.4em;
+                margin-right: 8px;
+                text-align: center;
+                width: 1.4em;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-sm-offset-2" id="wrapper">
+                <div class="col-sm-12" id="header-wrap">
+                    <div id="form-header">
+                        <h1>Sign up now!</h1>
+                        <p>Sign up for the dev job of your dreams</p>
+                    </div>
+                    <div id="name-address">
+                        <!--<h2 class="step-num">1</h2>-->
+                        <h2 class="in-form"><span class="numbers"> 1 </span>Name and Address</h2>
+                        <div class="col-sm-12 section">
+                            <h4>Your full name:</h4>
+                            <div class="full-name-error"></div>
+                            <input type="text" name="name" placeholder=" Your Full Name">
+                            <h4>Address:</h4>
+                            <div class="address-error"></div>
+                            <input type="text" name="address" placeholder=" Your Address">
+                        </div>
+                    </div>
+                    <div id="contact">
+                        <h2 class="in-form"><span class="numbers"> 2 </span>Contact Info</h2>
+                        <div class="col-sm-12 section">
+                            <h4>Email:</h4>
+                            <input type="text" name="email" placeholder=" Your email address">
+                            <h4>Phone:</h4>
+                            <input type="text" name="phone" placeholder=" Your phone number">
+                        </div>
+                    </div>
+                    <div id="password">
+                        <h2 class="in-form"><span class="numbers"> 3 </span>Password</h2>
+                        <div class="col-sm-12 section">
+                            <h4>Password:</h4>
+                            <input type="text" name="email" placeholder=" Password must be 6 characters">
+                            <h4>Confirm Password:</h4>
+                            <input type="text" name="phone" placeholder=" Re-enter your password">
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <h2 class="in-form"><span class="numbers"> 4 </span>Skills</h2>
+                        <div class="col-sm-12 section">
+                            <h4>My Tech Skills:</h4>
+                            <input type="text" name="email" placeholder=" Enter your skills">
+                            <h4>Years of Experience:</h4>
+                            <input type="text" name="phone" placeholder=" Years of XP">
+                        </div>
+                    </div>
+                    <div id="submit">
+                        <div class="col-sm-12 section">
+                            <div class="checkbox">
+                            <label>
+                                <input id="check" type="checkbox">I agree to the terms and policies</label>
+                                </div>
+                            <div class="control-group">
+                                <button class="btn btn-primary" type="button">Get me a job!</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
